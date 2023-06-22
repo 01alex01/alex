@@ -1,0 +1,200 @@
+.nav {
+  width: 100vw;
+  height: 9vh;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: $color-tertiary-light;
+  position: fixed;
+  z-index: 199;
+
+
+  ///////////////////////////////////////////RESPONSIVENESS////////////////////////////
+  @media only screen and (max-width: $bp-large) {}
+
+  @media only screen and (max-width: $bp-medium) {}
+
+
+  &__container {}
+
+  &__logo {
+
+    &--1 {
+      height: 15vh;
+      cursor: pointer;
+      margin-left: 1rem;
+      filter: brightness(300%);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    &--item {
+      list-style: none;
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $color-primary-dark;
+      font-size: 1rem;
+
+
+      &:hover {
+        color: $color-primary-dark;
+      }
+    }
+  }
+
+
+
+  &__btn {
+
+    // text-decoration: none;
+    // color: $color-grey-light-4;
+    // margin-right: 2rem;
+    // background-color: $color-primary;
+    // padding: 0.5rem 2rem;
+    // border: none;
+    // outline: none;
+    // border-radius: 20px;
+    // font-size: 0.8rem;
+    // font-weight: 400;
+    // cursor: pointer;
+    // transition: scale .2s ease;
+    &:link,
+    &:visited {
+      font-size: 0.8rem;
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+      background-color: $color-grey-light-4;
+      margin-right: 2rem;
+      font-weight: 400 bold;
+      border-radius: 2rem;
+      border: none;
+      padding: 0.5rem 2rem;
+      transition: all.2s;
+
+
+
+
+      @media only screen and (max-width: $bp-large) {
+        display: none;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: $color-grey-dark-1;
+      color: $color-primary-text;
+      box-shadow: 0 1rem 1rem rgba($color-black, .2);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+      transform: translateY(0);
+    }
+
+
+  }
+
+  &__toggle {
+    color: $color-primary-dark;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      margin-right: 2rem;
+    }
+  }
+
+  //////////////////////////////////////////////////////////
+  // DROPDOWN MENU/////
+  &__dropdown__menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: block;
+      margin-top: 0;
+
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: 2rem;
+      width: unset;
+      margin-top: 0;
+
+    }
+
+
+    &__open {
+      height: 240px;
+    }
+
+    &__a {
+      text-decoration: none;
+      color: #333;
+      background-color: $color-grey-dark-1;
+      padding: 1rem 2rem;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    & li {
+      padding: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover:not(:last-child) {
+        background-color: $color-grey-dark-1;
+      }
+    }
+  }
+}
