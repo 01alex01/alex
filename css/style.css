@@ -118,7 +118,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       .footer__1--a h1 {
         display: inline;
         font-size: 3rem;
-        font-style: oblique;
         font-weight: 700;
         margin-left: 1rem;
         margin-right: auto; }
