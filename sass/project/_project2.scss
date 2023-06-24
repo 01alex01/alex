@@ -3,7 +3,6 @@
   filter: blur();
   overflow: hidden;
   height: 100vh;
-  background-color: #444a4a;
   width: 100%;
 
 
@@ -27,7 +26,7 @@
     overflow: hidden;
     flex: 1;
     height: 100vh;
-
+    background-color: #444a4a;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -80,6 +79,7 @@
     position: relative;
     justify-content: center;
     padding: 10px 30px;
+    background-color: #fff;
 
     &-1 {
 

@@ -1,21 +1,29 @@
 .nav {
   width: 100vw;
-  height: 9vh;
+  height: 8vh;
   max-width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1.5rem;
-  background-color: $color-tertiary-light;
+  background-color: #fff;
+  box-shadow: 2px 3px 4px $color-grey-light-5;
   position: fixed;
   z-index: 199;
+  top: 0;
+
+
 
 
   ///////////////////////////////////////////RESPONSIVENESS////////////////////////////
-  @media only screen and (max-width: $bp-large) {}
+  @media only screen and (max-width: $bp-large) {
 
-  @media only screen and (max-width: $bp-medium) {}
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    top: 0rem;
+  }
 
 
   &__container {}
@@ -26,7 +34,7 @@
       height: 15vh;
       cursor: pointer;
       margin-left: 1rem;
-      filter: brightness(300%);
+      filter: brightness(100%);
     }
   }
 
@@ -48,7 +56,7 @@
 
     &--link {
       text-decoration: none;
-      color: $color-primary-dark;
+      color: #040c3e;
       font-size: 1rem;
 
 
@@ -80,7 +88,7 @@
       color: #fff;
       display: inline-block;
       text-decoration: none;
-      background-color: $color-grey-light-4;
+      background-color: #040c3e;
       margin-right: 2rem;
       font-weight: 400 bold;
       border-radius: 2rem;
@@ -101,7 +109,7 @@
     }
 
     &:hover {
-      background-color: $color-grey-dark-1;
+
       color: $color-primary-text;
       box-shadow: 0 1rem 1rem rgba($color-black, .2);
       transform: translateY(-2px);
@@ -167,7 +175,7 @@
 
 
     &__open {
-      height: 240px;
+      height: 200px;
     }
 
     &__a {

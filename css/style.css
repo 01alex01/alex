@@ -4,7 +4,9 @@
   box-sizing: border-box; }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #0d0c0c; }
 
 ::selection {
   background-color: black;
@@ -72,12 +74,128 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     transform: rotate(360deg); } }
 
 .footer {
-  background-color: blue;
-  color: white;
-  height: 200px;
+  color: black;
+  height: auto;
+  width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fff; }
+  .footer__1 {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-direction: row; }
+    .footer__1--a {
+      position: absolute;
+      height: 100%;
+      padding: 2rem 0;
+      width: 100%;
+      display: flex;
+      margin-right: 1rem;
+      flex: 1; }
+      .footer__1--a a {
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 400; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__1--a {
+          text-align: center;
+          width: 100vw;
+          display: block; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__1--a {
+          text-align: center;
+          width: 100vw;
+          display: inline-block; } }
+      .footer__1--a h1 {
+        display: inline;
+        font-size: 3rem;
+        font-style: oblique;
+        font-weight: 700;
+        margin-left: 1rem;
+        margin-right: auto; }
+      .footer__1--a p {
+        margin-right: 2rem;
+        text-align: left;
+        line-height: 1.4;
+        font-size: 1.2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .footer__1--a p {
+            top: 0;
+            left: 50%;
+            transform: translate(20%, 0); } }
+        @media only screen and (max-width: 37.5em) {
+          .footer__1--a p {
+            top: 0;
+            left: 50%;
+            transform: translate(10%, 0); } }
+  .footer__2 {
+    width: 100vw;
+    height: 40vh;
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column; }
+    .footer__2--1 {
+      color: black;
+      margin-bottom: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .footer__2--1 {
+          padding: 10px 30px; } }
+      @media only screen and (max-width: 37.5em) {
+        .footer__2--1 {
+          padding: 10px 30px; } }
+    .footer__2--a {
+      height: 20vh;
+      width: 100vw;
+      padding: 4rem 0rem;
+      text-align: center;
+      overflow: hidden; }
+      .footer__2--a-section {
+        display: inline-block;
+        height: 10vh;
+        width: 20vw;
+        overflow: hidden;
+        text-align: center; }
+        .footer__2--a-section-img1 {
+          display: flex;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-left: auto;
+          cursor: pointer; }
+        .footer__2--a-section-img2 {
+          width: 50%;
+          height: 100%;
+          cursor: pointer; }
+          @media only screen and (max-width: 56.25em) {
+            .footer__2--a-section-img2 {
+              width: 100%; } }
+          @media only screen and (max-width: 37.5em) {
+            .footer__2--a-section-img2 {
+              width: 100%; } }
+        .footer__2--a-section-img3 {
+          display: flex;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-bottom: 0px;
+          object-fit: cover;
+          cursor: pointer; }
+    .footer__2--b {
+      height: 5vh;
+      text-align: left;
+      width: 100%;
+      padding-left: .6rem;
+      bottom: 0px; }
 
 .project {
   width: 100%;
@@ -94,8 +212,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   filter: blur();
   overflow: hidden;
   height: 100vh;
-  width: 100%;
-  background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.8)); }
+  width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .project1 {
       flex-direction: column;
@@ -111,6 +228,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
+    background-color: #162052;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -147,7 +265,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     padding: 15rem 3rem;
     justify-items: space-between;
     position: relative;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    background-color: #fff; }
     @media only screen and (max-width: 56.25em) {
       .project1--b-1 {
         margin-bottom: 3rem; } }
@@ -155,7 +274,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       .project1--b-1 {
         margin-bottom: 3rem; } }
     .project1--b-1 h1 {
-      color: #fff;
+      color: #000;
       font-size: 3rem;
       margin-bottom: 3rem; }
       @media only screen and (max-width: 56.25em) {
@@ -165,7 +284,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
         .project1--b-1 h1 {
           font-size: 2.5rem; } }
     .project1--b-1 p {
-      color: #fff;
+      color: #000;
       font-weight: 400;
       font-size: 1rem; }
       @media only screen and (max-width: 56.25em) {
@@ -180,7 +299,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   filter: blur();
   overflow: hidden;
   height: 100vh;
-  background-color: #444a4a;
   width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .project2 {
@@ -197,6 +315,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
+    background-color: #444a4a;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -234,7 +353,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     justify-items: space-between;
     position: relative;
     justify-content: center;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    background-color: #fff; }
     @media only screen and (max-width: 56.25em) {
       .project2--b-1 {
         margin-bottom: 3rem; } }
@@ -267,7 +387,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   filter: blur();
   overflow: hidden;
   height: 100vh;
-  background-color: black;
   width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .project3 {
@@ -284,6 +403,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
+    background-color: #162052;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -322,7 +442,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     position: relative;
     justify-content: center;
     padding: 10px 30px;
-    color: #fff; }
+    color: #fff;
+    background-color: #fff; }
     @media only screen and (max-width: 56.25em) {
       .project3--b-1 {
         margin-bottom: 3rem; } }
@@ -355,7 +476,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   filter: blur();
   overflow: hidden;
   height: 100vh;
-  background-image: linear-gradient(#1e2f21, #1e2f21);
   width: 100%; }
   @media only screen and (max-width: 56.25em) {
     .project4 {
@@ -372,6 +492,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
+    background-image: linear-gradient(#1e2f21, #1e2f21);
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -409,7 +530,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     justify-items: space-between;
     position: relative;
     justify-content: center;
-    padding: 10px 30px; }
+    padding: 10px 30px;
+    background-color: #fff; }
     @media only screen and (max-width: 56.25em) {
       .project4--b-1 {
         margin-bottom: 3rem; } }
@@ -439,7 +561,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
 
 .header {
   display: flex;
-  top: 0;
   height: 100vh;
   align-items: center;
   overflow: hidden;
@@ -515,7 +636,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
           position: relative;
           font-size: 2.5rem;
           letter-spacing: 5px;
-          color: #162052;
+          color: #040c3e;
           text-align: left; }
           @media only screen and (max-width: 56.25em) {
             .header__section1-a-1-text1 {
@@ -530,7 +651,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
             height: 4px;
             width: 45px;
             bottom: 10px;
-            background-color: #162052; }
+            background-color: #040c3e; }
             @media only screen and (max-width: 56.25em) {
               .header__section1-a-1-text1::after {
                 width: 20px;
@@ -540,7 +661,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
                 width: 10px;
                 bottom: 4px; } }
         .header__section1-a-1-text2 {
-          color: #162052;
+          color: #040c3e;
           font-size: 3rem;
           display: inline; }
           @media only screen and (max-width: 56.25em) {
@@ -642,11 +763,11 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       content: '';
       position: absolute;
       inset: 6px;
-      background: #162052;
+      background-color: #040c3e;
       border-radius: 50%;
       z-index: 1; }
     .header__section2-a:hover::before {
-      inset: -20px 0px; }
+      inset: 20px 10px; }
     .header__section2--b {
       position: absolute;
       inset: 30px;
@@ -666,21 +787,28 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
 
 .nav {
   width: 100vw;
-  height: 9vh;
+  height: 8vh;
   max-width: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 1.5rem;
-  background-color: #162052;
+  background-color: #fff;
+  box-shadow: 2px 3px 4px #143539;
   position: fixed;
-  z-index: 199; }
+  z-index: 199;
+  top: 0; }
+  @media only screen and (max-width: 62.5em) {
+    .nav {
+      margin-top: 0; } }
+  @media only screen and (max-width: 50em) {
+    .nav {
+      top: 0rem; } }
   .nav__logo--1 {
     height: 15vh;
     cursor: pointer;
     margin-left: 1rem;
-    filter: brightness(300%); }
+    filter: brightness(100%); }
   .nav__list {
     display: flex;
     gap: 2.5rem; }
@@ -694,7 +822,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       list-style: none; }
     .nav__list--link {
       text-decoration: none;
-      color: #39d3e7;
+      color: #040c3e;
       font-size: 1rem; }
       .nav__list--link:hover {
         color: #39d3e7; }
@@ -703,7 +831,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     color: #fff;
     display: inline-block;
     text-decoration: none;
-    background-color: #39d3e7;
+    background-color: #040c3e;
     margin-right: 2rem;
     font-weight: 400 bold;
     border-radius: 2rem;
@@ -717,7 +845,6 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       .nav__btn:link, .nav__btn:visited {
         display: none; } }
   .nav__btn:hover {
-    background-color: #b6b8c1;
     color: #fff;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     transform: translateY(-2px); }
@@ -762,7 +889,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
         width: unset;
         margin-top: 0; } }
     .nav__dropdown__menu__open {
-      height: 240px; }
+      height: 200px; }
     .nav__dropdown__menu__a {
       text-decoration: none;
       color: #333;
@@ -855,3 +982,43 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transform: translateY(0); }
+
+.headerabt {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  background-size: cover;
+  display: flex;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  padding: 5rem 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .headerabt {
+      padding: 7rem 1rem; } }
+  .headerabt-1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.02);
+    filter: blur(); }
+    .headerabt-1 h1 {
+      text-align: left;
+      font-size: 2.2rem; }
+    .headerabt-1 p {
+      text-align: left; }
+  .headerabt__a {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    shape-outside: calc(); }
+    @media only screen and (max-width: 37.5em) {
+      .headerabt__a {
+        display: block; } }
+    .headerabt__a--2 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
