@@ -848,7 +848,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transform: translateY(0); }
   .nav__toggle {
-    color: #39d3e7;
+    color: #162052;
     font-size: 1.5rem;
     cursor: pointer;
     display: none; }
