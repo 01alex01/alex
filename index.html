@@ -15,37 +15,43 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav__logo">
-            <img src="./image/logo.png" alt="logo" class="nav__logo--1">
-        </div>
-        <ul class="nav__list">
-            <li class="nav__list--item"><a href="./index.html" class="nav__list--link">Home</a></li>
-            <li class="nav__list--item"><a href="/" class="nav__list--link">Team</a></li>
-            <li class="nav__list--item"><a href="./about.html" class="nav__list--link">About</a></li>
 
-        </ul>
-
-        <a href="/" class="nav__btn">Mail</a>
-        <div class="nav__toggle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <!-- ---------------------------------------------------------dropdown menu -->
-        <!-- ---------------------------------------------------------dropdown menu -->
-        <!-- ---------------------------------------------------------dropdown menu -->
-        <div class="nav__dropdown__menu nav__dropdown__menu__open">
-            <li class="nav__list--item"><a href="./index.html" class="nav__list--link">Home</a></li>
-            <li class="nav__list--item"><a href="/" class="nav__list--link">Team</a></li>
-            <li class="nav__list--item"><a href="./about.html" class="nav__list--link">About</a></li>
-
-            <li><a href="/" class=" nav__dropdown__menu__a">Mail</a></li>
-        </div>
-        <!-- ---------------------------------------------------------dropdown menu -->
-        <!-- ---------------------------------------------------------dropdown menu -->
-        <!-- ---------------------------------------------------------dropdown menu -->
-    </nav>
 
     <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="./image/logo.png" alt="logo" class="nav__logo--1">
+            </div>
+            <ul class="nav__list">
+                <li class="nav__list--item"><a href="./index.html" class="nav__list--link">Home</a></li>
+                <li class="nav__list--item"><a href="./team.html" class="nav__list--link">Team</a></li>
+                <li class="nav__list--item"><a href="./about.html" class="nav__list--link">About</a></li>
+
+            </ul>
+
+            <a href="/" class="nav__btn">Mail</a>
+
+
+            <div class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- ---------------------------------------------------------dropdown menu -->
+            <!-- ---------------------------------------------------------dropdown menu -->
+            <!-- ---------------------------------------------------------dropdown menu -->
+            <div class="nav__dropdown__menu ">
+                <div class="nav__dropdown__menu__open">
+                    <li class="nav__list--item"><a href="./index.html" class="nav__list--link">Home</a></li>
+                    <li class="nav__list--item"><a href="./team.html" class="nav__list--link">Team</a></li>
+                    <li class="nav__list--item"><a href="./about.html" class="nav__list--link">About</a></li>
+
+                    <li><a href="/" class=" nav__dropdown__menu__a">Mail</a></li>
+                </div>
+
+            </div>
+            <!-- ---------------------------------------------------------dropdown menu -->
+            <!-- ---------------------------------------------------------dropdown menu -->
+            <!-- ---------------------------------------------------------dropdown menu -->
+        </nav>
         <div class="header__section1 ">
             <div class="header__section1-a">
                 <span class="header__section1-a-1-text1">Hi</span>
@@ -80,7 +86,7 @@
             </div>.
             <div class="project1--b">
                 <div class="project1--b-1">
-                    <h1>Nature website</h1>
+                    <h1>Nature <span>website</span></h1>
                     <p>the nature website is an immersive online plartform designed to celebrate and <br>showcase
                         the beauty of the natural word.it serves as a hub for nature<br> enthusiasts,providing a
                         captivating
@@ -100,7 +106,7 @@
             </div>
             <div class="project2--b">
                 <div class="project1--b-1">
-                    <h1>Stylish Cup with Coffee</h1>
+                    <h1>Stylish Cup <span>with Coffee</span></h1>
                     <p>
                         I created a visually appealing cup with coffee using CSS. This web design project allowed me to
                         showcase my CSS skills and attention to detail. The cup is meticulously crafted with a clean and
@@ -132,7 +138,7 @@
             </div>
             <div class="project3--b">
                 <div class="project1--b-1">
-                    <h1>Shotlet Apartment</h1>
+                    <h1>Shotlet <span>Apartment</span></h1>
                     <p>
                         Experience modern urban living with the interactive virtual tour of the Shotlet Apartment. As a
                         web developer, I designed this immersive web project to showcase my skills in web development
@@ -165,7 +171,7 @@
             </div>
             <div class="project4--b">
                 <div class="project1--b-1">
-                    <h1>DreamHomes - Discover and Buy Beautiful Houses</h1>
+                    <h1>Dream <span>Homes</span> </h1>
                     <p>
                         DreamHomes is a cutting-edge online platform I developed as a web developer. It revolutionizes
                         the way people buy beautiful houses by providing a seamless and intuitive marketplace.<br>
@@ -186,7 +192,7 @@
         <div class="footer__1">
 
             <div class="footer__1--a">
-                <h1>want to work? </h1>
+                <h1>want to <span>work? </span> </h1>
                 <p>If you need a modern and powerful website for your business, <br>startup or yourself, I am available
                     for work. You can email me<br> directly at <a
                         href="mailto:01atolagbealex01@gmail.com">01atolagbealex01@gmail.com</a></p>
@@ -222,8 +228,8 @@
     </footer>
 
     <script>
-        const toggleBtn = document.querySelector('.nav__toggle')
-        const toggleBtnIcon = document.querySelector('.nav__toggle i')
+        const toggleBtn = document.querySelector('.nav__toggle ');
+        const toggleBtnIcon = document.querySelector('.nav__toggle i');
         const nav__dropdown__menu = document.querySelector('.nav__dropdown__menu')
 
         toggleBtn.onclick = function () {
@@ -236,14 +242,6 @@
 
 
         }
-
-
-        // let menu = document.querySelector('.nav__toggle ');
-        // let navToggle = document.querySelector('.nav__dropdown__menu');
-        // menu.onclick = () => {
-        //     menu.classList.toggle('fa-solid fa-xmark');
-        //     navToggle.classList.toggle('fa-solid fa-bars');
-        // }
     </script>
 
     <!-- Load library from the CDN -->
