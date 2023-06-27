@@ -1,13 +1,15 @@
 .headerabt {
-    height: 100%;
     width: 100%;
     text-align: center;
     background-color: #fff;
     background-size: cover;
-    display: flex;
-    padding-bottom: 10rem;
     overflow: hidden;
     padding: 5rem 1rem;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
 
     @include respond (tab-port) {
 
