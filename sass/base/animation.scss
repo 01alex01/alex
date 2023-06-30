@@ -42,8 +42,28 @@
     }
 }
 
-@keyframes animated {
+@keyframes btn-black {
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+        -webkit-transform: translate(0px);
+        -moz-transform: translate(0px);
+        -ms-transform: translate(0px);
+        -o-transform: translate(0px);
+    }
+
     0% {
+        opacity: 1;
+        transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -o-transform: translateY(-30px);
+    }
+}
+
+@keyframes animated {
+    20% {
         transform: rotate(0deg);
     }
 
