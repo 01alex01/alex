@@ -5,12 +5,12 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #fff;
-  color: #0d0c0c;
+  background-color: #000;
+  color: #fff !important;
   scroll-behavior: smooth; }
 
 ::selection {
-  background-color: black;
+  background-color: blue;
   color: #fff; }
 
 /*
@@ -140,7 +140,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-color: #fff; }
+  background-color: #000; }
   .footer__1 {
     height: 100vh;
     width: 100%;
@@ -159,7 +159,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       flex: 1; }
       .footer__1--a a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         text-transform: uppercase;
         font-weight: 400; }
       @media only screen and (max-width: 56.25em) {
@@ -175,12 +175,14 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       .footer__1--a h1 {
         display: inline;
         font-size: 3rem;
+        color: #fff !important;
         font-weight: 700;
         margin-left: 1rem;
         margin-right: auto; }
       .footer__1--a p {
         margin-right: 2rem;
         text-align: left;
+        color: #fff !important;
         line-height: 1.4;
         font-size: 1.2rem; }
         @media only screen and (max-width: 56.25em) {
@@ -200,7 +202,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     text-align: center;
     flex-direction: column; }
     .footer__2--1 {
-      color: black;
+      color: #fff !important;
       margin-bottom: 2rem; }
       @media only screen and (max-width: 56.25em) {
         .footer__2--1 {
@@ -269,7 +271,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   overflow: hidden;
   height: 100vh;
   width: 100%;
-  top: 4rem; }
+  top: 4rem;
+  background-color: #000; }
   @media only screen and (max-width: 56.25em) {
     .project1 {
       flex-direction: column;
@@ -325,14 +328,14 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     justify-items: space-between;
     position: relative;
     padding: 10px 30px;
-    background-color: #fff; }
+    background-color: #000; }
     .project1--b-1 {
       height: 100%; }
       @media only screen and (max-width: 37.5em) {
         .project1--b-1 {
           padding-bottom: 2rem; } }
       .project1--b-1 h1 {
-        color: #000;
+        color: #fff !important;
         font-size: 2rem;
         margin-bottom: 1rem; }
         .project1--b-1 h1 span {
@@ -345,7 +348,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
             margin-bottom: .1rem;
             font-size: 2rem; } }
       .project1--b-1 p {
-        color: #000;
+        color: #fff !important;
         font-weight: 400;
         font-size: 1rem; }
         @media only screen and (max-width: 56.25em) {
@@ -419,7 +422,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     position: relative;
     justify-content: center;
     padding: 10px 30px;
-    background-color: #fff; }
+    background-color: #000; }
     @media only screen and (max-width: 56.25em) {
       .project2--b-1 {
         margin-bottom: 3rem; } }
@@ -511,7 +514,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     justify-content: center;
     padding: 10px 30px;
     color: #fff;
-    background-color: #fff; }
+    background-color: #000; }
     @media only screen and (max-width: 56.25em) {
       .project3--b-1 {
         margin-bottom: 3rem; } }
@@ -599,7 +602,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     position: relative;
     justify-content: center;
     padding: 10px 30px;
-    background-color: #fff; }
+    background-color: #000; }
     @media only screen and (max-width: 56.25em) {
       .project4--b-1 {
         margin-bottom: 3rem; } }
@@ -694,7 +697,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       .header__section1-a-1 {
         font-size: 4rem;
         display: inline;
-        color: #333;
+        color: #fff;
         animation-name: moveInRight;
         animation-duration: 1s;
         animation-timing-function: ease-in; }
@@ -711,7 +714,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
           position: relative;
           font-size: 2.5rem;
           letter-spacing: 5px;
-          color: #040c3e;
+          color: #fff;
           text-align: left;
           animation-name: btn-black;
           animation-duration: 1s;
@@ -880,7 +883,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   align-items: center;
   justify-content: space-between;
   font-size: 1.5rem;
-  background-color: #fff;
+  background-color: #000;
   box-shadow: 2px 3px 4px #143539;
   position: fixed;
   z-index: 199;
@@ -910,7 +913,8 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     .nav__list--link {
       text-decoration: none;
       color: #040c3e;
-      font-size: 1rem; }
+      font-size: 1.3rem;
+      font-weight: 700; }
       .nav__list--link:hover {
         color: #39d3e7; }
   .nav__btn:link, .nav__btn:visited {
@@ -1078,7 +1082,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
   overflow: hidden;
   height: 100vh;
   width: 100%;
-  background-color: #162052;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1125,7 +1129,7 @@ form {
 .headerabt {
   width: 100%;
   text-align: center;
-  background-color: #fff;
+  background-color: #000;
   background-size: cover;
   overflow: hidden;
   padding: 5rem 1rem;

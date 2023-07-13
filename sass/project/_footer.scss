@@ -8,7 +8,7 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #000;
 
 
 
@@ -36,7 +36,7 @@
 
       & a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         text-transform: uppercase;
         font-weight: 400;
 
@@ -60,7 +60,7 @@
       & h1 {
         display: inline;
         font-size: 3rem;
-
+        color: #fff !important;
         font-weight: 700;
         margin-left: 1rem;
         margin-right: auto;
@@ -72,6 +72,7 @@
       & p {
         margin-right: 2rem;
         text-align: left;
+        color: #fff !important;
         line-height: 1.4;
         font-size: 1.2rem;
 
@@ -104,7 +105,7 @@
     flex-direction: column;
 
     &--1 {
-      color: black;
+      color: #fff !important;
       margin-bottom: 2rem;
 
       @include respond (tab-port) {
