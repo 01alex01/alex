@@ -56,12 +56,12 @@
 
     &--link {
       text-decoration: none;
-      color: #040c3e;
+      color: $color-tertiary-light;
       font-size: 1.3rem;
       font-weight: 700;
 
       &:hover {
-        color: $color-primary-dark;
+        color: $color-tertiary-dark;
       }
     }
   }

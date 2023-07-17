@@ -290,7 +290,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
-    background-color: #162052;
+    background-color: #082bdc;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -339,7 +339,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
         font-size: 2rem;
         margin-bottom: 1rem; }
         .project1--b-1 h1 span {
-          color: #162052; }
+          color: #082bdc; }
         @media only screen and (max-width: 56.25em) {
           .project1--b-1 h1 {
             font-size: 2rem; } }
@@ -384,7 +384,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
-    background-color: #162052;
+    background-color: #082bdc;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -474,7 +474,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
-    background-color: #162052;
+    background-color: #082bdc;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -563,7 +563,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     overflow: hidden;
     flex: 1;
     height: 100vh;
-    background-color: #162052;
+    background-color: #082bdc;
     display: flex;
     align-items: center;
     padding: 15rem 3rem;
@@ -732,7 +732,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
             height: 4px;
             width: 45px;
             bottom: 10px;
-            background-color: #040c3e; }
+            background-color: #082bdc; }
             @media only screen and (max-width: 56.25em) {
               .header__section1-a-1-text1::after {
                 width: 20px;
@@ -742,7 +742,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
                 width: 10px;
                 bottom: 4px; } }
         .header__section1-a-1-text2 {
-          color: #040c3e;
+          color: #082bdc;
           font-size: 3rem;
           display: inline; }
           @media only screen and (max-width: 56.25em) {
@@ -912,11 +912,11 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
       list-style: none; }
     .nav__list--link {
       text-decoration: none;
-      color: #040c3e;
+      color: #082bdc;
       font-size: 1.3rem;
       font-weight: 700; }
       .nav__list--link:hover {
-        color: #39d3e7; }
+        color: #5643fa; }
   .nav__btn:link, .nav__btn:visited {
     font-size: 0.8rem;
     color: #fff;
@@ -943,7 +943,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transform: translateY(0); }
   .nav__toggle {
-    color: #162052;
+    color: #082bdc;
     font-size: 1.5rem;
     cursor: pointer;
     display: none; }
@@ -1014,7 +1014,7 @@ ORDER:BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
     border-radius: 100px;
     transition: all .2s;
     position: relative;
-    background-color: #162052;
+    background-color: #082bdc;
     border: none;
     cursor: pointer;
     color: #fff;
@@ -1103,7 +1103,7 @@ form {
     font-weight: 800;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #162052; }
+    color: #082bdc; }
   form input,
   form textarea {
     border: 0;
@@ -1124,7 +1124,7 @@ form {
     cursor: pointer;
     background-color: #5643fa; }
     form button:hover {
-      background-color: #162052; }
+      background-color: #082bdc; }
 
 .headerabt {
   width: 100%;
