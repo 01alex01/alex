@@ -12,6 +12,13 @@
 
 
 
+  @include respond (tab-port) {
+    height: 70vh;
+  }
+
+  @include respond (phone) {
+    height: 70vh;
+  }
 
   &__1 {
     height: 100vh;
@@ -24,14 +31,29 @@
 
 
 
+
+    @include respond (tab-port) {}
+
+    @include respond (phone) {}
+
     &--a {
       position: absolute;
-      height: 100%;
+      height: 100px;
       padding: 2rem 0;
       width: 100%;
       display: flex;
-      margin-right: 1rem;
+      flex-direction: column;
+      text-align: center;
       flex: 1;
+
+
+      @include respond (tab-port) {
+        padding: 0px 0px;
+      }
+
+      @include respond (phone) {
+        padding: 0px 0px;
+      }
 
 
       & a {
@@ -44,7 +66,7 @@
 
       @include respond (tab-port) {
         text-align: center;
-        width: 100vw;
+        width: 100%;
         display: block;
 
 
@@ -66,7 +88,9 @@
         margin-right: auto;
 
 
-
+        & span {
+          color: blue;
+        }
       }
 
       & p {
@@ -77,17 +101,25 @@
         font-size: 1.2rem;
 
         @include respond (tab-port) {
+          text-align: left;
+          justify-content: center;
           top: 0;
           left: 50%;
-          transform: translate(20%, 0);
-
+          transform: translate(0%, -50%);
+          -webkit-transform: translate(0%, -50%);
+          -moz-transform: translate(0%, -50%);
+          -ms-transform: translate(0%, -50%);
+          -o-transform: translate(0%, -50%);
         }
 
         @include respond (phone) {
-          top: 0;
-          left: 50%;
-          transform: translate(10%, 0);
-
+          text-align: left;
+          justify-content: center;
+          transform: translate(10%, 20%);
+          -webkit-transform: translate(10%, 20%);
+          -moz-transform: translate(10%, 20%);
+          -ms-transform: translate(10%, 20%);
+          -o-transform: translate(10%, 20%);
         }
       }
     }
@@ -119,10 +151,11 @@
 
     &--a {
       height: 20vh;
-      width: 100vw;
+      width: 100%;
       padding: 4rem 0rem;
       text-align: center;
       overflow: hidden;
+
 
 
       &-section {
@@ -182,6 +215,7 @@
       width: 100%;
       padding-left: .6rem;
       bottom: 0px;
+      color: #fff;
     }
   }
 }
